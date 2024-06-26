@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps de controle financeiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="image/semfundoecono.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/styleartig.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/semfundoecono.png" alt="Logo" height="36">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Favoritados</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Acesse mais
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Como funciona</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Investimentos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Educação Financeira</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light me-2" href="#" role="button">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="pglogin.html" role="button">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ANUNCIOS -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Anúncio 1 -->
+                <br><br>
+                <div class="card mb-3">
+                    <div class="card-body">
+
+                        <h5 class="card-title">Como investir <br>com pouco dinheiro?</h5>
+                        <p>Com pouco dinheiro.</p>
+                    </div>
+                </div>
+                <br><br><br>
+
+                <!-- Anúncio 2 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Como ter mais dinheiro</h5>
+                        <p>Anúncio ou artigo relacionado.</p>
+                    </div>
+                </div>
+                <br><br><br>
+                <!-- Anúncio 3 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Poupar dinheiro</h5>
+                        <p>Anúncio ou artigo relacionado.</p>
+                    </div>
+                </div>
+                <br><br><br>
+                <!-- Anúncio 4 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Melhorar de vida </h5>
+                        <p>Anúncio ou artigo relacionado.</p>
+                    </div>
+                </div>
+                <br><br><br>
+                <!-- Anúncio 5 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Como sair das dividas?</h5>
+                        <p>Leia este artigo e saiba como sair</p>
+
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Melhorar de vida </h5>
+                        <p>Anúncio ou artigo relacionado.</p>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Melhorar de vida </h5>
+                        <p>Anúncio ou artigo relacionado.</p>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Melhorar de vida </h5>
+                        <p>Anúncio ou artigo relacionado.</p>
+                    </div>
+                </div>
+                <br><br><br>
+            </div>
+
+            <!-- Main Content -->
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <br><br>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="card-title">Utilize Sites e Apps para organizar suas finanças</h2>
+                            <span class="favorite-button" onclick="toggleFavorite(this)">
+                                <svg id="heartIcon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 3.905C2.864 8.905 6.377 12 8 13.481c1.623-1.481 5.136-4.576 6.286-6.523.955-1.405.838-2.882.314-3.905C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.278-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.722-3.04 23.333 4.867 8 15z" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="article-content">
+                            <p>Os aplicativos e carteiras digitais são ferramentas essenciais para organizar suas
+                                finanças pessoais de maneira eficiente e prática. Eles oferecem diversas funcionalidades
+                                que ajudam a controlar gastos, categorizar despesas, e até mesmo planejar investimentos.
+                            </p>
+                            <img src="https://via.placeholder.com/800x400.png?text=Apps+e+Carteiras+Digitais"
+                                class="img-fluid mb-3" alt="Imagem de Economia">
+                            <h3>Importância de Utilizar Apps de Organização Financeira</h3>
+                            <p>Ter um aplicativo de organização financeira facilita o monitoramento constante das suas
+                                finanças, proporcionando uma visão clara de onde seu dinheiro está sendo gasto. Isso
+                                ajuda a evitar desperdícios, controlar dívidas, e estabelecer metas realistas de
+                                economia.</p>
+                            <h3>Principais Funcionalidades</h3>
+                            <p>Os aplicativos oferecem recursos como:</p>
+                            <ul>
+                                <li><strong>Registro de Transações:</strong> Anote todas as suas despesas e receitas de
+                                    forma organizada e automatizada.</li>
+                                <li><strong>Categorização de Gastos:</strong> Agrupe suas despesas por categorias
+                                    (alimentação, transporte, lazer, etc.) para melhor análise.</li>
+                                <li><strong>Planejamento Financeiro:</strong> Estabeleça metas de economia e receitas,
+                                    acompanhando seu progresso ao longo do tempo.</li>
+                                <li><strong>Integração Bancária:</strong> Conecte suas contas bancárias para
+                                    sincronização automática de transações.</li>
+                            </ul>
+                            <h3>Carteiras Digitais</h3>
+                            <p>Além dos aplicativos de controle financeiro, as carteiras digitais como PayPal, PicPay e
+                                Mercado Pago oferecem conveniência no pagamento de contas, transferências entre pessoas,
+                                e até mesmo opções de investimento de forma acessível e rápida.</p>
+                            <img src="https://via.placeholder.com/800x400.png?text=Carteiras+Digitais"
+                                class="img-fluid mb-3" alt="Imagem de Economia">
+                            <p>Com a possibilidade de realizar pagamentos por aproximação e acesso imediato ao histórico
+                                de transações, as carteiras digitais são ideais para quem busca praticidade e segurança
+                                nas operações financeiras do dia a dia.</p>
+                            <h3>Exemplos de Aplicativos e Carteiras Digitais</h3>
+                            <p>Aqui estão alguns exemplos populares de aplicativos e carteiras digitais:</p>
+                            <ul>
+                                <li><strong>Organizze:</strong> Aplicativo brasileiro que oferece controle financeiro
+                                    completo, com categorização de gastos e sincronização bancária.</li>
+                                <li><strong>Wallet:</strong> Aplicativo internacional com recursos avançados de
+                                    planejamento financeiro, orçamento e análise de despesas.</li>
+                                <li><strong>PicPay:</strong> Carteira digital brasileira que permite pagamentos,
+                                    transferências e até mesmo investimentos de forma simples e rápida.</li>
+                                <li><strong>Mercado Pago:</strong> Carteira digital do Mercado Livre, com opções de
+                                    pagamento, transferências e benefícios para compradores e vendedores.</li>
+                            </ul>
+                            <p>Esses aplicativos e carteiras digitais são essenciais para quem busca uma gestão
+                                financeira eficiente e moderna, adaptada aos novos padrões de consumo e tecnologia.</p>
+                        </div>
+
+                    </div>
+                    <br>
+                </div>
+
+
+            </div>
+
+
+            <!-- More Recommendations -->
+            <h3 class="mt-4" style="font-size: 2rem;text-align: center;">Veja também:</h3>
+            <br>
+            <div class="recommendations">
+                <div class="recommendation-card card">
+                    <img src="image/divcartcred.jpeg" class="card-img-top" alt="Investimento">
+                    <div class="card-body">
+                        <h5 class="card-title">Como sair das divídas?</h5>
+                        <p class="card-text">Acabe com as divídas do cartão de crédito</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+                <div class="recommendation-card card">
+                    <img src="https://www.modalmais.com.br/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2022/02/rentabilidade-o-que-e.jpg.webp"
+                        class="card-img-top" alt="Economia">
+                    <div class="card-body">
+                        <h5 class="card-title">Como investir?</h5>
+                        <p class="card-text">Saiba como investir do zero e ganhar aquela renda extra no fim do mês.</p>
+                        <a href="" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+                <div class="recommendation-card card">
+                    <img src="https://www.mobills.com.br/blog/wp-content/uploads/2022/01/mobills-web-despesas-nova-1024x466.png"
+                        class="card-img-top" alt="Mercado">
+                    <div class="card-body">
+                        <h5 class="card-title">Sites e apps para organizar suas finanças</h5>
+                        <p class="card-text">Aprenda os princípios básicos para investir em ações com confiança.</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+                <div class="recommendation-card card">
+                    <img src="https://www.financasforever.com.br/assets/images/como-fazer-seu-dinheiro-sobrar-no-final-do-mes-20211208143353-jpg.jpg?_cchid=f66308322bf046037619882c95bbf6d5"
+                        class="card-img-top" alt="Criptomoedas">
+                    <div class="card-body">
+                        <h5 class="card-title">Como sobrar dinheiro no fim do mês?</h5>
+                        <p class="card-text">Descubra dicas para sobrar aquela graniha no fim do mês e sair das dívidas.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+                <div class="recommendation-card card">
+                    <img src="https://abefin.org.br/wp-content/uploads/2023/09/person-putting-coins-piggy-bank-with-books-pencils-1024x731.jpg"
+                        class="card-img-top" alt="Tecnologia Financeira">
+                    <div class="card-body">
+                        <h5 class="card-title">Importância da educação financeira</h5>
+                        <p class="card-text">Conheça a importancia e entenda mais sobre educação finançeira.</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+                <div class="recommendation-card card">
+                    <img src="https://files.sunoresearch.com.br/p/uploads/2017/12/financas-pessoais.jpg.jpg"
+                        class="card-img-top" alt="Economia Sustentável">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculadora Financeira </h5>
+                        <p class="card-text">Acesse nossa calculadora de investimentos</p>
+                        <a href="#" class="btn btn-primary">Vá para nossa página</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white mt-4">
+        <div class="container p-4">
+            <section class="mb-4">
+                <p style="font-style: bold; font-family: Arial, Helvetica, sans-serif;">
+                    Saiba mais:
+                </p>
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://github.com/ICEI-PUC-Minas-PBR-ADS/pbr-ads-2024-1-1-ti-aw-t1-pbr-ads-2024-1-1-aw-economicamente"
+                    role="button"><i class="fab fa-github"></i> GitHub</a>
+            </section>
+            <section class="footer-links">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Acesse:</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-white">Página inicial</a></li>
+                            <li><a href="#!" class="text-white">Favoritos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Veja também:</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-white">Como funciona</a></li>
+                            <li><a href="#!" class="text-white">Investimentos</a></li>
+                            <li><a href="#!" class="text-white">Educação Financeira</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Registre-se:</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-white">Cadastre-se</a></li>
+                            <li><a href="#!" class="text-white">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Contatos:</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#" class="text-white">Email</a></li>
+                            <li><a href="#" class="text-white">+55-31-931789245</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="text-center p-3"
+            style="background-color: rgba(182, 236, 195, 0.89); color: black; font-family: Arial, Helvetica, sans-serif; font-size: 17px;">
+            © 2024 Economicamente
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/artigovjs.js"></script>
+
+
+</body>
+
+</html>
